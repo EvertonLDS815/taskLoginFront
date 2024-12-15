@@ -10,7 +10,7 @@ const PublicRoute = ({ children }) => {
 
 const PrivateRoute = ({ children }) => {
   const token = localStorage.getItem('token');
-  return token ? children : <Navigate to="/login" />;
+  return token ? children : <Navigate to="/" />;
 };
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
     <Router>
       <Routes>
         <Route
-          path="/login"
+          path="/"
           element={
             <PublicRoute>
               <Login />
@@ -33,7 +33,7 @@ function App() {
             </PrivateRoute>
           }
         />
-        <Route path="*" element={<Navigate to="/login" />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );

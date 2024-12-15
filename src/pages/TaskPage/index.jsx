@@ -104,7 +104,7 @@ const TodoList = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('token');  // Remove o token do localStorage
-    navigate('/login');  // Redireciona para a página de login
+    navigate('/');  // Redireciona para a página de login
   };
 
   return (
