@@ -1,0 +1,88 @@
+.headfix {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.headfix h2 {
+  font-size: 1.2rem;
+}
+.table-todo {
+  box-shadow: 2px 3px 25px -1px rgba(0, 0, 0, 0.75);
+  max-width: 95vw;
+  width: 500px;
+  display: block;
+  padding: 15px;
+  margin: 50px auto;
+  background: #4e619a;
+  border-radius: 1rem;
+}
+
+.table-todo h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+.content-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; /* Adiciona um pequeno espaço entre os itens */
+}
+.content-space input {
+  font-size: 17px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  background: #3f3f3f;
+  flex-grow: 1; /* Permite que o input cresça para ocupar o espaço disponível */
+  flex-shrink: 1; /* Permite que o input diminua conforme o espaço disponível */
+  min-width: 150px; /* Define o tamanho mínimo do input */
+  max-width: 100%;
+}
+.content-space input::placeholder {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.content-space button {
+  flex-shrink: 0; /* Impede que o botão diminua além do tamanho necessário */
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  margin: 1.2rem 0;
+  box-shadow: 2px 3px 25px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.complete {
+  margin-right: 0.5rem;
+}
+.complete:hover, .content-space button:hover {
+  color: #0161cf;
+}
+.list li span {
+  padding: 0.5rem 0;
+  word-wrap: break-word; /* Permite que palavras muito longas sejam quebradas */
+  overflow-wrap: break-word; /* Propriedade mais moderna com o mesmo efeito */
+  white-space: normal;
+}
+
+.completed {
+  background: #2a8257;
+}
+.delete {
+  float: right;
+}
+.delete:hover, .logout:hover {
+  color: red;
+}
