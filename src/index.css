@@ -10,14 +10,14 @@
 }
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color-scheme: light dark;
+  color: #ddd;
   background-color: #242424;
-  color: rgba(255, 255, 255, 0.87);
   margin: 0;
   display: flex;
 }
 button {
   border-radius: 8px;
+  color: white;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -29,4 +29,7 @@ button {
 }
 button:hover, button:focus-visible {
   border-color: #646cff;
+}
+input {
+  color: #ddd;
 }
