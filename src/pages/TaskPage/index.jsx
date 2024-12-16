@@ -129,8 +129,7 @@ const TodoList = () => {
             <li
               key={item._id}
               style={{
-                backgroundColor: item.completed ? '#2a8257' : '#3f3f3f',
-                textDecoration: item.completed ? 'line-through' : 'none',
+                backgroundColor: item.completed ? '#2a8257' : '#3f3f3f'
               }}
             >
               <button onClick={() => handleToggleTaskCompletion(item._id)} className="complete">

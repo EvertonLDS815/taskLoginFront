@@ -86,3 +86,17 @@
 .delete:hover, .logout:hover {
   color: red;
 }
+
+@media (max-width: 430px) {
+  .complete:hover, .content-space button:hover, 
+  .delete:hover, .logout:hover {
+    color: white;
+    border-color: transparent;
+  }
+  .complete:active, .content-space button:active {
+    color: #0161cf;
+  }
+  .delete:active, .logout:active {
+    color: red;
+  }
+}
